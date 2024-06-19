@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p{
+font-size:32px;
+}
+</style>
+</head>
+<body>
+<p>Lista de frutas</p>
+<button onclick="fruta()">Muestra Lista de Frutas</button>  "Boton para mostrar la lista de frutas"
+<p id="demo"></p>
+<script>
+    function fruta() {
+var i;
+var text = "<ul>"; 
+var frutas = ["Platano", "Naranja", "Manzana", "Mango","Fresa","Pera"]; //frutas que queremos poner en la lista
+for (i = 0; i < frutas.length; i++) { //i es igula a cer y es menor a las frutas miestras va aunmentado 1 a 1 
+text += "<li>" + frutas[i] + "</li>"; //Integrar las frutas seleccionadas en la lista"
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text; //Imprime la lista de frutas
+}
+</script>
+</body>
+</html>
